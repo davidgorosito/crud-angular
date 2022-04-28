@@ -1,8 +1,10 @@
 <mat-toolbar color="primary">
     <span>AppUsers</span>
-<!-- cass para alinear al centro--><span class="example-spacer"></span> 
-    <button mat-button >Dashboard</button>
-    <button mat-button >Usuarios</button>
-    <button mat-button >Reportes</button>
 <!-- cass para alinear al centro--><span class="example-spacer"></span>
+<!-- Rcorro el for y muestro el menu dinamicamente--> 
+    <button mat-button *ngFor="let item of menu " [routerLink]="item.redirect" >{{item.nombre}}</button>
+<!-- cass para alinear al centro--><span class="example-spacer"></span>
+<button routerLink="/logout" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <img src="../../../../assets/img/exit.png" width="100%" heigth="100%"alt="">
+  </button>
   </mat-toolbar>

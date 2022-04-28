@@ -7,8 +7,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTableModule} from '@angular/material/table';
 //modulos
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -24,7 +27,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    HttpClientModule,
+    MatTableModule
 
   ],// exporto para poder usarlos en los demas module
   exports:[
@@ -34,7 +40,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    HttpClientModule,
+    MatTableModule
   ]
 })
 export class SharedModule { }
